@@ -1,0 +1,53 @@
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 999;
+
+	&_show {
+		display: block;
+	}
+
+	&__window {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 400px;
+		height: 180px;
+		background-color: white;
+		top: 20%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 20px;
+		box-sizing: border-box;
+		color: #202020;
+		animation: open 0.4s;
+
+		@keyframes open {
+			from {
+				top: 40%;
+				opacity: 0.2;
+			}
+			to {
+				top: 20%;
+				opacity: 1;
+			}
+		}
+
+		&__message {
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		&__btn {
+			width: 30%;
+			padding: 3px 0;
+		}
+	}
+}

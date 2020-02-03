@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>card</title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+	<div class="card-wrapper">
+		<div class="cardForm">
+			<div class="card">
+				<img src="/images/galo.png" class="card__galo">
+				<img src="/images/visa.png" class="card__visa">
+				
+				<div class="card__number">
+					<span class="card__number__part">####</span>
+					<span class="card__number__part">####</span>
+					<span class="card__number__part">####</span>
+					<span class="card__number__part">####</span>
+				</div>
+				
+				<div class="card__bottom">
+					<div class="card__bottom__item card__bottom__item_name" id="cardHolder">name</div>
+					<div class="card__bottom__item card__bottom__item_date" id="date">mm/yy</div>
+				</div>
+			</div>
+
+
+			<div class="form">
+				<form action="#" id="cardForm">
+					<div class="form__field" id="numberField">
+						<p><label for="cardNumber" class="form__field__label">Card Number</label></p>
+						<input type="text" id="cardNumber" name="cardNumber" class="form__field__input">
+						<span class="form__field__error"></span>
+					</div>
+					<div class="form__field" id="nameField">
+						<p><label for="cardName" class="form__field__label">Card Name</label></p>
+						<input type="text" id="cardName" name="cardName" class="form__field__input">
+						<span class="form__field__error">this field is required</span>
+					</div>
+					<div class="flex-row">
+						<div class="form__field" id="monthField">
+							<p><label for="month" class="form__field__label">Expiration Date</label></p>
+							<select name="month" id="month" class="form__field__select">
+								<option selected class="disp_none">month</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							<span class="form__field__error">this field is required</span>
+						</div>
+						<div class="form__field" id="yearField">
+							<select name="year" id="year" class="form__field__select">
+								<option selected class="disp_none">year</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<span class="form__field__error form__field__error_year">this field is required</span>
+						</div>
+						<div class="form__field" id="cvvField">
+							<p><label for="cvv" class="form__field__label form__field__label_cvv">CVV</label></p>
+							<input type="text" id="cvv" name="cvv" class="form__field__input form__field__input_cvv">
+							<span class="form__field__error form__field__error_cvv"></span>
+						</div>
+					</div>
+					<div>
+						<input type="submit" value="Submit" class="form__btn"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal">
+		<div class="modal__window">
+			<p class="modal__window__message"></p>
+			<button class="modal__window__btn" id="modalOk">OK</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
