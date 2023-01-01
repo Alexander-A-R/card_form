@@ -13,7 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.3.0",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -23,6 +23,6 @@
     "gulp-flatten": "^0.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^7.0.0"
   }
 }
